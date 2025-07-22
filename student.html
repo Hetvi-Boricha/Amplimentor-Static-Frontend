@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="student.css">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="nav-menu">
+                    <h1 class="logo"><img src="logo.png" alt="AmpliMentor" height="60" width="400"></h1>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#assignments">Assignment</a></li>
+                    <li><a href="#notifications">Notifications</a></li>
+                    <li><a href="#find-mentor">Search For Mentor</a></li>
+                    <li><a href="#review">Review Your Mentor</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Dashboard Section -->
+    <section class="dashboard-section">
+        <div class="container">
+            <div class="dashboard-header">
+                <h2>Welcome, [Student Name]</h2>
+                <p>Manage your sessions and explore new opportunities.</p>
+            </div>
+            <div class="dashboard-content">
+                <!-- Ongoing Sessions -->
+                <div class="card">
+                    <h3>Ongoing Sessions</h3>
+                    <ul class="session-list">
+                        <li>No ongoing sessions at the moment.</li>
+                    </ul>
+                </div>
+
+                <!-- Upcoming Sessions -->
+                <div class="card">
+                    <h3>Upcoming Sessions</h3>
+                    <ul class="session-list">
+                        <li>
+                            <strong>Math with Mr. John Doe</strong><br>
+                            Date: 2024-10-15 | Time: 3:00 PM
+                        </li>
+                        <li>
+                            <strong>Physics with Ms. Jane Smith</strong><br>
+                            Date: 2024-10-17 | Time: 11:00 AM
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Completed Sessions -->
+                <div class="card">
+                    <h3>Completed Sessions</h3>
+                    <ul class="session-list">
+                        <li>
+                            <strong>Chemistry with Dr. Michael Adams</strong><br>
+                            Date: 2024-10-10 | Rating: ★★★★☆
+                        </li>
+                        <li>
+                            <strong>Biology with Dr. Lisa Cooper</strong><br>
+                            Date: 2024-09-28 | Rating: ★★★★★
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Quick Actions Section -->
+            <div class="quick-actions">
+                <h3>Quick Actions</h3>
+                <div class="actions">
+                    <a href="search-tutors.html" class="action-btn">Find New Tutors</a>
+                    <a href="payment.html" class="action-btn">Pay for Sessions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Review and Rating Section -->
+        <section id="review">
+            <div class="container">
+                <h2>Rate Your Mentor</h2>
+                <form action="submit_review.php" method="POST">
+                    <label for="mentor">Select Mentor:</label>
+                    <select id="mentor" name="mentor_id" aria-label="Select Mentor">
+                        <option value="1">Ms. Jane Doe</option>
+                        <option value="2">Mr. John Smith</option>
+                    </select>
+
+                    <label for="rating">Rating:</label>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5" />
+                        <label for="star5" title="5 stars">&#9733;</label>
+                        
+                        <input type="radio" id="star4" name="rating" value="4" />
+                        <label for="star4" title="4 stars">&#9733;</label>
+                        
+                        <input type="radio" id="star3" name="rating" value="3" />
+                        <label for="star3" title="3 stars">&#9733;</label>
+                        
+                        <input type="radio" id="star2" name="rating" value="2" />
+                        <label for="star2" title="2 stars">&#9733;</label>
+                        
+                        <input type="radio" id="star1" name="rating" value="1" />
+                        <label for="star1" title="1 star">&#9733;</label>
+                    </div>
+
+                    <label for="review">Review/Feedback:</label>
+                    <textarea id="review" name="review" rows="4" required aria-label="Write your feedback here"></textarea>
+
+                    <button type="submit" aria-label="Submit Review">Submit Review</button>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <p>&copy; 2024 AmpliMentor. All Rights Reserved.</p>
+                    <p><a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
+                </div>
+            </footer>
+        </body>
+        </html>

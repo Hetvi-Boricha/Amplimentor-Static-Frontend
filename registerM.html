@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register -AmpliMentor</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="nav-menu">
+                    <li></li>
+                    <!-- <h1 class="logo">AmpliMentor</h1> -->
+                    <h1 class="logo"><img src="logo.png" alt="AmpliMentor" height="60" width="400"></h1>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="register.html" target="_blank">Chat With Mentor</a></li>
+                    <li><a href="index.html#contact us">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Register Section -->
+    <section class="register-section">
+        <div class="container">
+            <h2>Register As A Mentor</h2>
+            <form action="#" class="register-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <input type="tel" placeholder="Phone No." size="10" class="phone" required>
+                <select class="Gender" name="Gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                    <input type="text" id="qualification" placeholder="Enter Your Qualification" required>
+                    <input type="text" id="experience" placeholder="Teaching Experience" required>
+                    <input type="text" id="bio" placeholder="Share Your Short Bio" required>
+                        <div class="standard-checkbox-group">
+                            Select Standard That You Want to Teach:
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="standard9" name="Standard" value="9">
+                                    <label for="standard9">Standard 9</label>
+                                </div>
+                            
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="standard10" name="Standard" value="10">
+                                    <label for="standard10">Standard 10</label>
+                                </div>
+                            
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="standard11" name="Standard" value="11">
+                                    <label for="standard11">Standard 11</label>
+                                </div>
+                            
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="standard12" name="Standard" value="12">
+                                    <label for="standard12">Standard 12</label>
+                                </div>
+                        </div>
+                        
+                    <input type="text" id="subject" placeholder="Subject You Want to Teach" required>
+                <button type="submit" class="register-btn1">Register</button>
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+            </form>
+        </div>
+    </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 AmpliMentor. All Rights Reserved.</p>
+                <p><a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
+            </div>
+        </footer>
+</body>
+</html>

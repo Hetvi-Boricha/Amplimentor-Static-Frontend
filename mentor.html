@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor-Dashboard</title>
+    <link rel="stylesheet" href="mentor.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="nav-menu">
+                    <h1 class="logo"><img src="logo.png" alt="AmpliMentor" height="60" width="400"></h1>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#session">Sessions</a></li>
+                    <li><a href="#requests">Student Requests</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#earning">Earnings</a></li>
+                    <li><a href="#review">Reviews</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <!-- Dashboard Section -->
+        <section class="dashboard-section">
+            <div class="container">
+                <div class="dashboard-header">
+                    <h2>Welcome, [Mentor Name]</h2>
+                    <p>Manage your sessions and track your progress.</p>
+                </div>
+                <div class="dashboard-content">
+                <!-- ongoing Sessions -->
+                <div class="card">
+                    <h3>Ongoing Sessions</h3>
+                    <ul class="session-list">
+                        <li>No ongoing sessions at the moment.</li>
+                    </ul>
+                </div>
+                
+                <!-- Upcoming Sessions -->
+                <div class="card">
+                    <h3>Upcoming Sessions</h3>
+                    <ul class="session-list">
+                        <li>
+                            <strong>Math with Ms. Jinny kim</strong><br>
+                            Date: 2024-10-15 | Time: 3:00 PM
+                        </li>
+                        <li>
+                            <strong>Physics with Mr. Light Yagami</strong><br>
+                            Date: 2024-10-17 | Time: 11:00 AM
+                        </li>
+                    </ul>
+                </div>
+                  <!-- Completed Sessions -->
+                  <div class="card">
+                    <h3>Completed Sessions</h3>
+                    <ul class="session-list">
+                        <li>
+                            <strong>Chemistry with Ms. Jhope Adams</strong><br>
+                            Date: 2024-10-10 | Rating: ★★★★☆
+                        </li>
+                        <li>
+                            <strong>Biology with Dr. Twilight Desuza</strong><br>
+                            Date: 2024-09-28 | Rating: ★★★★★
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                </section>
+                        <!-- Student Requests -->
+                        <div id="requests" class="request">
+                        <h3 id="srequest">Student Requests:</h3>
+                            <div class="request-list">
+                                <p>John Doe (Math), 2024-10-20, 2:00 PM</p>
+                                <p><button class="accept-btn">Accept</button> <button class="decline-btn">Decline</button></p>
+                            </div>
+                            <br>
+                            <div class="request-list">
+                            <p>Jane Smith (Physics), 2024-10-22, 10:00 AM</p>
+                            <p><button class="accept-btn">Accept</button> <button class="decline-btn">Decline</button></p>
+                        </div>
+                        </div>
+                        <br>
+                        <!-- Earnings -->
+                        <div class="earning" id="earning">
+                            <h3>Earnings</h3>
+                            <p>Total Earnings: $[Amount]</p>
+                            <p>Pending Payments: $[Amount]</p>
+                            <button class="view-btn">View Payment History</button>
+                        </div>
+                    <!-- Reviews -->
+                    <div class="review" id="review">
+                        <h3>Your Reviews</h3>
+                        <ul class="review-list">
+                            <li>Name:John Doe <br> Rating: ★★★★★<br> Review:["I had an amazing session with [Mentor's Name]! They explained concepts clearly and provided valuable examples. Their patience and guidance helped me understand difficult topics. I highly recommend [Mentor's Name] to anyone seeking a knowledgeable and supportive mentor."]
+
+                            </li>
+                            <li>Name:Jane Smith <br> Rating: ★★★★☆ <br> Review: ["Thanks to [Mentor's Name], I finally understand [difficult topic]!"
+                                ]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 AmpliMentor. All Rights Reserved.</p>
+        <p><a href="terms.html">Terms of Service</a> | <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+</footer>
+</body>
+</html>
+        
